@@ -1,0 +1,33 @@
+{
+  "name": "tonstory",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "deploy": "yarn build && npx thirdweb@latest upload dist"
+  },
+  "dependencies": {
+    "@ant-design/icons": "^5.3.6",
+    "@tma.js/sdk": "^1.5.3",
+    "@tma.js/sdk-react": "^2.0.3",
+    "@tonconnect/ui-react": "^2.0.0",
+    "antd": "^5.16.5",
+    "axios": "^1.6.8",
+    "eruda": "^3.0.1",
+    "kaboom": "^3000.1.17",
+    "react": "^18.2",
+    "react-dom": "^18.2",
+    "react-router-dom": "^6.22.0",
+    "styled-components": "^6.1.8"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.9",
+    "@types/react-dom": "^18.0.5",
+    "@vitejs/plugin-react": "^2",
+    "typescript": "^4.7.2",
+    "vite": "^3",
+    "vite-plugin-node-polyfills": "^0.7.0"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "name": "functions",
+  "scripts": {
+    "lint": "tslint --project tsconfig.json",
+    "serve": "firebase serve --only functions",
+    "dev": "yarn build && tsc --watch",
+    "start": "concurrently \"yarn dev\" \"yarn serve\"",
+    "build": "tsc",
+    "deploy": "firebase deploy --only functions",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines": {
+    "node": "20"
+  },
+  "main": "lib/index.js",
+  "dependencies": {
+    "@tma.js/init-data-node": "^1.1.15",
+    "cors": "^2.8.5",
+    "express": "^4.18.3",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "telegraf": "^4.16.3"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.11.28",
+    "firebase-functions-test": "^3.1.0",
+    "typescript": "^5.4.5"
+  },
+  "private": true
+}
