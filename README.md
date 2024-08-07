@@ -2,7 +2,7 @@
 
 2D platformer game developed for the TON Hackathon. In this game, players can farm airdrop points by fighting monsters. The game is designed to run as a Telegram Mini App.
 
-https://github.com/user-attachments/assets/521e3d3b-a1ea-4687-8194-b8aeb333627c
+![loopd](https://github.com/user-attachments/assets/3566593c-30cd-43e1-b49a-df2b5dabe8e3)
 
 ## Technologies Used
 
