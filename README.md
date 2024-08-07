@@ -84,4 +84,4 @@ I welcome contributions! This app is not fully complete; it was developed over a
 
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+This project is licensed under the Apache-2.0 license. See the [LICENSE](https://github.com/bicced/TonStory?tab=Apache-2.0-1-ov-file#readme) file for details.
