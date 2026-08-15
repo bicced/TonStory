@@ -2,8 +2,8 @@ import axios from 'axios';
 import { retrieveLaunchParams } from '@tma.js/sdk';
 const { initDataRaw } = retrieveLaunchParams();
 
-//update for production
-const API_BASE_URL = 'https://0558-144-48-39-25.ngrok-free.app/tonstory/us-central1/api';
+// Production API URL - Update with your Firebase Cloud Functions URL
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'https://us-central1-tonstory.cloudfunctions.net/api';
 
 const headers = {
   Authorization: `tma ${initDataRaw}`
@@ -24,7 +24,7 @@ export const getScoreboard = async () => {
     const response = await axios.get(`${API_BASE_URL}/scoreboard`, {headers});
     return response.data;
   } catch (error) {
-    console.error("Error fetching counters:", error);
+    console.error("Error fetching scoreboard:", error);
     throw error;
   }
 };
@@ -34,7 +34,7 @@ export const updatePoints = async () => {
     const response = await axios.post(`${API_BASE_URL}/update-points`, {}, {headers});
     return response.data;
   } catch (error) {
-    console.error("Error fetching counters:", error);
+    console.error("Error updating points:", error);
     throw error;
   }
 };
